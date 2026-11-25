@@ -1,0 +1,200 @@
+<title>Teleprompter de Reels</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+  /* Tela de leitura escura de propósito (não ofusca e não reflete no rosto). Layout: texto ocupa a tela, linha de leitura no alto, controles fixos embaixo. */
+  :root {
+    --fundo: #07090f; --barra: #121726; --borda: #283048; --texto: #f4f6fb;
+    --suave: #8f97ae; --destaque: #ffc24a; --lido: #4a5270;
+    --f-texto: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    color-scheme: dark;
+  }
+  [hidden] { display: none !important; }
+  html, body { height: 100%; }
+  body { background: var(--fundo); color: var(--texto); font-family: var(--f-texto); overflow: hidden;
+    -webkit-user-select: none; user-select: none; }
+  button, textarea { font: inherit; color: inherit; }
+  #palco { position: fixed; inset: 0; overflow: hidden; touch-action: none; }
+  #rolo { position: absolute; left: 0; right: 0; padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px)); font-weight: 650; line-height: 1.42;
+    text-wrap: pretty; will-change: transform; }
+  #rolo.espelho { transform: scaleX(-1); }
+  .cabeca { font-size: 13px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--destaque);
+    font-weight: 800; margin-bottom: 14px; }
+  .lido { color: var(--lido); }
+  .pausa { color: var(--suave); font-size: .5em; vertical-align: middle; }
+  .fim { color: var(--suave); font-size: 15px; margin-top: 40px; padding-bottom: 60vh; }
+  #linha { position: fixed; left: 0; right: 0; top: calc(env(safe-area-inset-top, 0px) + 18vh); height: 2px;
+    background: linear-gradient(90deg, var(--destaque), transparent 80%); opacity: .7; pointer-events: none; }
+  #veu { position: fixed; left: 0; right: 0; top: 0; height: calc(env(safe-area-inset-top, 0px) + 10vh);
+    background: linear-gradient(var(--fundo), transparent); pointer-events: none; }
+  #barra { position: fixed; left: 0; right: 0; bottom: 0; background: var(--barra); border-top: 1px solid var(--borda);
+    padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; transition: transform .25s; }
+  #barra.oculta { transform: translateY(110%); }
+  #barra button { background: #1b2236; border: 1px solid var(--borda); border-radius: 12px; min-height: 48px;
+    font-size: 15px; font-weight: 600; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; }
+  #barra button small { font-size: 11px; color: var(--suave); font-weight: 500; }
+  #barra button:focus-visible { outline: 2px solid var(--destaque); }
+  #barra .principal { background: var(--destaque); color: #1a1406; border-color: var(--destaque); }
+  #info { position: fixed; top: calc(env(safe-area-inset-top, 0px) + 8px); right: max(12px, env(safe-area-inset-right, 0px));
+    font-size: 12px; color: var(--suave); font-variant-numeric: tabular-nums; pointer-events: none; }
+  #contagem { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 34vw;
+    font-weight: 900; color: var(--destaque); background: rgba(7,9,15,.8); }
+  #folha { position: fixed; inset: 0; background: var(--fundo); display: flex; flex-direction: column; gap: 12px;
+    padding: calc(env(safe-area-inset-top, 0px) + 16px) max(16px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 16px) max(16px, env(safe-area-inset-left, 0px)); }
+  #folha h2 { margin: 0; font-size: 18px; }
+  #folha p { margin: 0; color: var(--suave); font-size: 14px; line-height: 1.5; }
+  #folha textarea { flex: 1; min-height: 0; background: #0d111c; border: 1px solid var(--borda); border-radius: 12px; padding: 12px;
+    font-size: 16px; line-height: 1.5; -webkit-user-select: text; user-select: text; }
+  #folha .acoes { display: flex; gap: 8px; }
+  #folha .acoes button { flex: 1; min-height: 48px; border-radius: 12px; border: 1px solid var(--borda); background: #1b2236; font-weight: 600; }
+  #folha .acoes .principal { background: var(--destaque); color: #1a1406; border-color: var(--destaque); }
+  @media (prefers-reduced-motion: reduce) { #barra { transition: none; } }
+</style>
+
+<div id="palco"><div id="rolo"></div></div>
+<div id="veu"></div>
+<div id="linha"></div>
+<div id="info"></div>
+<div id="contagem" hidden></div>
+
+<div id="barra">
+  <button id="b-ant" aria-label="Bloco anterior">◀<small>bloco</small></button>
+  <button id="b-vel" aria-label="Velocidade"><span id="vel">150</span><small>palavras/min</small></button>
+  <button id="b-play" class="principal" aria-label="Rolar">▶<small>rolar</small></button>
+  <button id="b-tam" aria-label="Tamanho da letra">Aa<small id="tam-r">letra</small></button>
+  <button id="b-prox" aria-label="Próximo bloco">▶<small>bloco</small></button>
+  <button id="b-menos" aria-label="Mais devagar">−<small>devagar</small></button>
+  <button id="b-mais" aria-label="Mais rápido">+<small>rápido</small></button>
+  <button id="b-inicio" aria-label="Voltar ao início do bloco">↺<small>do início</small></button>
+  <button id="b-esp" aria-label="Espelhar">⇋<small>espelhar</small></button>
+  <button id="b-roteiro" aria-label="Trocar roteiro">✎<small>roteiro</small></button>
+</div>
+
+<div id="folha" hidden>
+  <h2>Roteiro</h2>
+  <p>Cole o texto do teleprompter. Cada bloco começa com "## Título". Um bloco é uma tomada.</p>
+  <textarea id="txt" aria-label="Texto do roteiro"></textarea>
+  <div class="acoes">
+    <button id="f-padrao">Exemplo</button>
+    <button id="f-cancelar">Cancelar</button>
+    <button id="f-ok" class="principal">Usar</button>
+  </div>
+</div>
+
+<script>
+const PADRAO = "## Gancho\nA Anthropic conversou com gente de 58 empresas que já usam IA no dia a dia. E o que eles encontraram contraria muito do que a gente ouve por aí.\n\n## O estudo\nForam 66 entrevistas, de startup a indústria centenária, de escritório de advocacia a consultório de dentista.\n\n## Primeira surpresa\nPrimeira surpresa: a maior parte do valor não vem de cortar custo. Vem de produzir mais e melhor.\n\n## Software\nSegunda: gente que não é programadora está criando software com agentes de código. Dos 100 programas analisados em detalhe, 80% automatizaram um trabalho que antes era manual.\n\n## Emprego\nE o emprego? Demissão causada diretamente pela automação foi rara. Só duas empresas viram um cargo ser eliminado de fato. Mas em dois terços delas, as pessoas relataram que estão contratando menos. Como disse um entrevistado: a gente pode não estar demitindo, mas também não está contratando. E quem sentiu primeiro foram os terceirizados, muitos deles fora dos Estados Unidos.\n\n## Startups\nNas startups, a conta é ainda mais forte. Seis delas estimaram que, sem IA, precisariam em média de quatro vezes mais gente.\n\n## A virada\nMas o que mais me chamou atenção foi outra coisa. Os maiores gargalos estavam dentro das próprias empresas. Resistência de especialistas, adoção desigual entre as equipes e falta de contexto e de dados.\n\n## O ponto central\nO maior valor não veio da ferramenta. Veio de reorganizar o trabalho. Quem só experimenta aqui e ali colhe ganhos em ilhas.\n\n## Lema\nPor isso eu sempre repito: IA é o copiloto. Cultura, decisão e responsabilidade continuam humanas.\n\n## Chamada\nQuer o link do estudo completo? Comenta ESTUDO aqui embaixo que eu te mando.\n";
+const $ = (s) => document.querySelector(s);
+const TAMANHOS = [26, 32, 38, 46, 56, 68];
+const est = { blocos: [], i: 0, y: 0, rolando: false, ultimo: 0, wpm: 150, tam: 2, espelho: false, trava: null };
+const ler = (k, d) => { try { const v = localStorage.getItem('tpc_' + k); return v === null ? d : v; } catch (e) { return d; } };
+const gravar = (k, v) => { try { localStorage.setItem('tpc_' + k, v); } catch (e) {} };
+
+function parse(t) {
+  const out = []; let b = null;
+  t.split(/\r?\n/).forEach((l) => {
+    if (l.startsWith('## ')) { b = { titulo: l.slice(3).trim(), linhas: [] }; out.push(b); }
+    else if (l.trim()) { if (!b) { b = { titulo: 'Roteiro', linhas: [] }; out.push(b); } b.linhas.push(l.trim()); }
+  });
+  return out.map((x) => ({ titulo: x.titulo, texto: x.linhas.join(' ') }));
+}
+
+function carregar(t) { est.blocos = parse(t); if (!est.blocos.length) est.blocos = parse(PADRAO); ir(Math.min(est.i, est.blocos.length - 1)); }
+
+function ir(n) {
+  est.i = Math.max(0, Math.min(n, est.blocos.length - 1));
+  const b = est.blocos[est.i];
+  const rolo = $('#rolo'); rolo.textContent = '';
+  const c = document.createElement('div'); c.className = 'cabeca';
+  c.textContent = 'Bloco ' + (est.i + 1) + ' de ' + est.blocos.length + ' · ' + b.titulo;
+  rolo.appendChild(c);
+  const corpo = document.createElement('div');
+  b.texto.split(/\s+/).forEach((w) => {
+    corpo.appendChild(document.createTextNode(w + ' '));
+    if (/[.!?]$/.test(w)) { const p = document.createElement('span'); p.className = 'pausa'; p.textContent = '⏸ '; corpo.appendChild(p); }
+  });
+  rolo.appendChild(corpo);
+  const f = document.createElement('div'); f.className = 'fim';
+  f.textContent = est.i < est.blocos.length - 1 ? 'Fim do bloco. Toque em ▶ bloco para o próximo.' : 'Fim do roteiro. Bom trabalho!';
+  rolo.appendChild(f);
+  est.palavras = b.texto.split(/\s+/).length;
+  est.y = 0; parar(); pos(); info();
+}
+
+function info() {
+  const s = Math.round(est.palavras / est.wpm * 60);
+  $('#info').textContent = est.palavras + ' palavras · ~' + s + ' s';
+  $('#vel').textContent = est.wpm;
+}
+
+function linhaY() { return $('#linha').getBoundingClientRect().top; }
+function pos() { $('#rolo').style.top = (linhaY() - 28 - est.y) + 'px'; }
+
+function tick(ts) {
+  if (est.rolando) {
+    const dt = est.ultimo ? Math.min((ts - est.ultimo) / 1000, 0.1) : 0;
+    const corpo = $('#rolo').children[1];
+    const pxPalavra = corpo.offsetHeight / Math.max(est.palavras, 1);
+    est.y += pxPalavra * (est.wpm / 60) * dt;
+    const max = corpo.offsetTop + corpo.offsetHeight;
+    if (est.y >= max) { est.y = max; parar(); }
+    pos();
+  }
+  est.ultimo = ts; requestAnimationFrame(tick);
+}
+
+async function manterTelaAcesa() {
+  try { if (navigator.wakeLock && !est.trava) { est.trava = await navigator.wakeLock.request('screen'); est.trava.addEventListener('release', () => { est.trava = null; }); } } catch (e) {}
+}
+
+function rolar() {
+  manterTelaAcesa();
+  if (est.y < 5) {
+    let n = 3; const c = $('#contagem'); c.hidden = false; c.textContent = n;
+    const iv = setInterval(() => { n--; if (n > 0) { c.textContent = n; return; } clearInterval(iv); c.hidden = true; comecar(); }, 1000);
+  } else comecar();
+}
+function comecar() { est.rolando = true; est.ultimo = 0; $('#b-play').innerHTML = '❚❚<small>pausar</small>'; $('#barra').classList.add('oculta'); }
+function parar() { est.rolando = false; $('#b-play').innerHTML = '▶<small>rolar</small>'; $('#barra').classList.remove('oculta'); }
+function alternar() { est.rolando ? parar() : rolar(); }
+
+function velocidade(d) { est.wpm = Math.max(80, Math.min(240, est.wpm + d)); gravar('wpm', est.wpm); info(); }
+function tamanho() { est.tam = (est.tam + 1) % TAMANHOS.length; aplicarTam(); gravar('tam', est.tam); }
+function aplicarTam() { $('#rolo').style.fontSize = TAMANHOS[est.tam] + 'px'; $('#tam-r').textContent = TAMANHOS[est.tam] + ' px'; pos(); }
+
+$('#b-play').onclick = alternar;
+$('#b-ant').onclick = () => ir(est.i - 1);
+$('#b-prox').onclick = () => ir(est.i + 1);
+$('#b-mais').onclick = () => velocidade(10);
+$('#b-menos').onclick = () => velocidade(-10);
+$('#b-vel').onclick = () => velocidade(10);
+$('#b-tam').onclick = tamanho;
+$('#b-inicio').onclick = () => { est.y = 0; parar(); pos(); };
+$('#b-esp').onclick = () => { est.espelho = !est.espelho; $('#rolo').classList.toggle('espelho', est.espelho); };
+$('#b-roteiro').onclick = () => { $('#txt').value = ler('roteiro', PADRAO); $('#folha').hidden = false; };
+$('#f-cancelar').onclick = () => { $('#folha').hidden = true; };
+$('#f-padrao').onclick = () => { $('#txt').value = PADRAO; };
+$('#f-ok').onclick = () => { const t = $('#txt').value; gravar('roteiro', t); est.i = 0; carregar(t); $('#folha').hidden = true; };
+
+// Toque no texto: pausa/continua. Arrastar: ajusta a posição na mão.
+let toque = null;
+$('#palco').addEventListener('pointerdown', (e) => { toque = { y: e.clientY, base: est.y, moveu: false }; });
+$('#palco').addEventListener('pointermove', (e) => { if (!toque) return; const d = toque.y - e.clientY; if (Math.abs(d) > 8) { toque.moveu = true; est.y = Math.max(0, toque.base + d); pos(); } });
+$('#palco').addEventListener('pointerup', () => { if (toque && !toque.moveu) alternar(); toque = null; });
+document.addEventListener('keydown', (e) => {
+  if (!$('#folha').hidden) return;
+  if (e.key === ' ') { e.preventDefault(); alternar(); }
+  else if (e.key === 'ArrowRight') ir(est.i + 1);
+  else if (e.key === 'ArrowLeft') ir(est.i - 1);
+  else if (e.key === 'ArrowUp') velocidade(10);
+  else if (e.key === 'ArrowDown') velocidade(-10);
+});
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && est.rolando) manterTelaAcesa(); });
+window.addEventListener('resize', pos);
+
+est.wpm = +ler('wpm', 150) || 150;
+est.tam = Math.min(+ler('tam', 2) || 2, TAMANHOS.length - 1);
+aplicarTam();
+carregar(ler('roteiro', PADRAO));
+requestAnimationFrame(tick);
+</script>

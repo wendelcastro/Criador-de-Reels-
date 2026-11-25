@@ -19,7 +19,7 @@ de preparo na primeira vez e uns 5 nas seguintes.
    Nada de bagunça e nada de janela atrás.
 3. **Luz principal:** na frente, um pouco acima dos olhos, a 45° do rosto. Se for janela, fique de lado para ela.
 4. **Celular:** câmera **traseira**, na **vertical**, a ~1 m, lente na altura dos olhos.
-   Configure **4K a 30 fps** (ou 1080p a 30 fps). Desligue o modo retrato/desfoque artificial.
+   Configure **1080p a 30 fps** (4K só se for editar no computador; no app, arquivo grande demora a subir). Desligue o modo retrato/desfoque artificial.
 5. **Trave foco e exposição:** toque e segure no seu rosto até aparecer "AE/AF travado". Baixe um pouco a exposição.
 6. **Teleprompter:** notebook logo abaixo ou atrás do celular, texto no alto da tela, letra grande (54 a 72 px).
    Quanto mais perto da lente estiver a linha de leitura, mais natural fica o olhar.

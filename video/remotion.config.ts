@@ -7,3 +7,8 @@ Config.setCodec('h264');
 Config.setCrf(18);
 Config.setPixelFormat('yuv420p');
 Config.setOverwriteOutput(true);
+
+// Na nuvem do Claude Code já existe um Chrome headless; usa ele em vez de baixar outro.
+import fs from 'node:fs';
+const CHROME_NUVEM = '/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell';
+if (fs.existsSync(CHROME_NUVEM)) Config.setBrowserExecutable(CHROME_NUVEM);

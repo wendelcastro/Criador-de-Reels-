@@ -38,13 +38,17 @@ O guia completo, para entregar ao usuário, está em `docs/guia-de-gravacao.md`.
 
 ## Teleprompter
 
-- **No computador:** abra `teleprompter/index.html` no Chrome, carregue `projetos/<nome>/teleprompter.txt`.
-  Modo "Seguir voz" faz o texto andar conforme a fala. Com a câmera ligada, ele grava cada bloco
-  (`bloco-01-take-1.webm`) e mostra a linha-guia dos olhos.
-- **Gravando com o celular:** use o mesmo HTML só como teleprompter num notebook/tablet logo atrás do celular,
-  ou um app de teleprompter. Nomeie os arquivos na ordem dos blocos (bloco-01, bloco-02...).
+- **Celular + segundo aparelho (melhor qualidade):** o celular grava com a câmera traseira, em 1080p a 30 fps.
+  O teleprompter abre num tablet, notebook ou outro celular, logo atrás ou abaixo da lente.
+  Use a versão publicada de `teleprompter/celular.html` (link do Artifact). Ela rola o texto, deixa a tela acesa,
+  espelha para vidro de teleprompter e anda bloco a bloco.
+- **Só um celular:** use um app de teleprompter que grava por cima da câmera frontal (há vários nas lojas, como
+  BIGVU e PromptSmart). Coloque o texto do `teleprompter.txt` nele. Câmera frontal perde um pouco de qualidade,
+  então capriche na luz.
+- **No computador:** `teleprompter/index.html` no Chrome grava pela webcam e tem o modo "Seguir voz".
+- Páginas publicadas no Claude não acessam a câmera; por isso a versão de celular só rola o texto.
 
 ## Depois de gravar
 
-Coloque tudo em `projetos/<nome>/gravacoes/` e siga para a skill `reel-edicao`. Não precisa apagar tomadas ruins:
+No app, anexe os vídeos na conversa (ou mande o link do Google Drive). No computador, coloque em `projetos/<nome>/gravacoes/`. Depois siga para a skill `reel-edicao`. Não precisa apagar tomadas ruins:
 indique quais blocos usar ou deixe o pipeline escolher a última tomada de cada bloco.

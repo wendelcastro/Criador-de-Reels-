@@ -22,14 +22,25 @@ Nunca pule uma aprovação. Em cada parada, mostre um resumo curto e pergunte se
 - Leia a fonte inteira. Monte a ficha de fatos (só números que estão na fonte, com a frase original).
 - Crie `projetos/<nome>/` com `roteiro.md`, `teleprompter.txt`, `cenas.plan.json` e `post.md`.
 - Rode a prévia sem gravar: `python pipeline/alinhar.py projetos/<nome> --simular`, copie
-  `props.simulado.json` para `video/src/data/demo.json` e gere 6 a 12 quadros com `npx remotion still`
-  (ou `npm run studio` para o usuário ver animado). Mostre a folha de quadros.
+  `props.simulado.json` para `video/src/data/demo.json` e renderize a prévia
+  (`cd video && npx remotion render Reel out/previa.mp4 --crf=23`). Entregue o MP4 ao usuário
+  (no app, com a ferramenta de envio de arquivo). No computador, `npm run studio` também serve.
 - **Parada 1:** o usuário aprova texto, gancho e esquemas.
 
 ### Etapa 2. Gravação  →  skill `reel-gravacao`
-- Entregue o checklist de gravação adaptado ao equipamento dele (celular ou webcam).
-- Indique o teleprompter: `teleprompter/index.html` (abre no Chrome, grava bloco a bloco).
-- **Parada 2:** o usuário coloca as tomadas em `projetos/<nome>/gravacoes/`.
+- Entregue o checklist de gravação adaptado ao equipamento dele (o padrão é o celular).
+- Teleprompter: publique/atualize `teleprompter/celular.html` como Artifact com o roteiro novo embutido
+  (troque a constante `PADRAO`) e mande o link. Ele abre no celular ou tablet e só rola o texto;
+  a gravação é feita com a câmera do próprio celular. No computador, `teleprompter/index.html` também grava.
+- **Parada 2:** o usuário manda as tomadas (veja "Recebendo o vídeo" abaixo).
+
+### Recebendo o vídeo
+- **No computador (Claude Code local):** os arquivos vão para `projetos/<nome>/gravacoes/`.
+- **No app (sessão na nuvem):** o usuário anexa o vídeo na conversa. Procure o arquivo recebido,
+  copie para `projetos/<nome>/gravacoes/` e siga. Se o anexo não chegar (limite de tamanho do app),
+  peça para subir no Google Drive com "qualquer pessoa com o link" e baixe pelo link
+  (se a rede bloquear o Drive, peça para liberar o host com as ferramentas de ambiente).
+- Vídeos do celular em 4K são pesados: peça 1080p a 30 fps, que é o tamanho final do Reel.
 
 ### Etapa 3. Limpeza  →  skill `reel-edicao` (parte A)
 - `preparar.py` → `transcrever.py` → `cortar.py` (sem `--aplicar`).
