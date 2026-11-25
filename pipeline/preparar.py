@@ -16,7 +16,10 @@ from pathlib import Path
 
 from comum import exigir_ffmpeg, rodar, sonda, erro
 
+import subprocess
+
 EXT = {".mp4", ".mov", ".m4v", ".webm", ".mkv"}
+TEM_ZSCALE = "zscale" in subprocess.run(["ffmpeg", "-hide_banner", "-filters"], capture_output=True, text=True).stdout
 
 
 def main() -> None:
@@ -55,7 +58,16 @@ def main() -> None:
             print(f"[aviso] {arq.name} está na horizontal ({w}x{h}). Vou recortar o centro em 9:16; "
                   "o ideal é gravar na vertical.")
         destino = tmp / f"p{i:03d}.mp4"
-        filtro = (
+        hdr = v.get("color_transfer") in ("arib-std-b67", "smpte2084")
+        tonemap = ""
+        if hdr:
+            if TEM_ZSCALE:
+                tonemap = ("zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,"
+                           "tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,")
+            else:
+                print(f"[aviso] {arq.name} foi gravado em HDR e este FFmpeg não converte HDR. "
+                      "As cores podem ficar lavadas. Desligue o 'Vídeo HDR' na câmera do celular.")
+        filtro = tonemap + (
             "scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,"
             "crop=1080:1920,setsar=1,fps=30,format=yuv420p"
         )

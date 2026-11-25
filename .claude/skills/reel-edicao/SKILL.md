@@ -8,6 +8,14 @@ description: Edita a gravação de um Reel falado. Transcreve localmente com tim
 Ordem obrigatória: **primeiro o tempo da fala (cortes), depois esquemas e legendas.** Tudo se apoia nos
 timestamps da linha do tempo já editada.
 
+## Parte 0. Achar os vídeos
+
+- Se houver vídeos em `entrada/`, eles são a gravação nova. O projeto é o que o usuário disser ou, se ele não
+  disser, o de `projetos/` com roteiro e sem `reel.mp4` mais recente (confirme o nome numa frase).
+  Mova os vídeos para `projetos/<nome>/gravacoes/` mantendo os nomes (IMG_xxxx do celular já ficam em ordem
+  de gravação) e deixe `entrada/` só com o `LEIA-ME.md`.
+- Use `python3` no Mac/Linux e `python` no Windows nos comandos abaixo.
+
 ## Parte A. Limpeza da fala
 
 ```bash

@@ -27,6 +27,9 @@ Em cada etapa o Claude para e pede a sua aprovação.
 
 ## Instalação (uma vez)
 
+**Guia sem atrito, com Mac e Windows: [`docs/passo-a-passo-computador.md`](docs/passo-a-passo-computador.md).**
+
+
 Pré-requisitos: **Python 3.10+**, **Node 18+** e **FFmpeg**.
 
 - macOS: `brew install ffmpeg python node`

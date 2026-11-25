@@ -37,7 +37,7 @@ def rodar(cmd: list[str], silencioso: bool = True) -> subprocess.CompletedProces
 def sonda(caminho: str | Path) -> dict:
     r = rodar([
         "ffprobe", "-v", "error", "-show_entries",
-        "stream=codec_type,width,height,r_frame_rate,sample_rate:stream_side_data=rotation:format=duration",
+        "stream=codec_type,width,height,r_frame_rate,sample_rate,color_transfer:stream_side_data=rotation:format=duration",
         "-of", "json", str(caminho),
     ])
     return json.loads(r.stdout)

@@ -12,6 +12,10 @@ Projeto para produzir Reels falados no formato de tela dividida. Use as skills e
 - O contrato de dados entre `pipeline/` e `video/` está em `video/src/types.ts`. Mudou um, mude o outro.
 - Antes de mostrar um render, rode `pipeline/verificar.py` e olhe a folha de contato.
 
+- Vídeos novos chegam em `entrada/`. "Editar os vídeos da entrada" = skill `reel-edicao`.
+- No Mac/Linux use `python3`; no Windows, `python`.
+- Ao terminar um render no computador do usuário, abra o vídeo para ele (`open` no Mac, `start` no Windows).
+
 ## Comandos úteis
 
 - Prévia sem gravar: `python pipeline/alinhar.py projetos/<nome> --simular`

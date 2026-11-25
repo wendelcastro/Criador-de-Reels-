@@ -8,3 +8,5 @@ projetos/*/palavras_editadas.json
 projetos/*/cortes.json
 __pycache__/
 .DS_Store
+entrada/*
+!entrada/LEIA-ME.md
