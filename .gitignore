@@ -1,0 +1,10 @@
+# vídeos e áudios pesados ficam fora do git
+projetos/*/gravacoes/
+projetos/*/*.mp4
+projetos/*/*.webm
+projetos/*/*.png
+projetos/*/transcricao.json
+projetos/*/palavras_editadas.json
+projetos/*/cortes.json
+__pycache__/
+.DS_Store

@@ -1,0 +1,254 @@
+{
+  "projeto": "working-with-ai",
+  "fonte": "Fonte: Anthropic · Working with AI · nov/2026",
+  "focoY": 0.38,
+  "destaques": [
+    "58",
+    "66",
+    "valor",
+    "80%",
+    "rara",
+    "menos",
+    "quatro",
+    "gargalos",
+    "reorganizar",
+    "copiloto",
+    "humanas",
+    "estudo"
+  ],
+  "cenas": [
+    {
+      "ancora": "a anthropic conversou com",
+      "layout": "full",
+      "zoom": false
+    },
+    {
+      "ancora": "e o que eles encontraram",
+      "layout": "acima",
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "Estudo Anthropic · nov/2026",
+        "titulo": "Como empresas trabalham com IA de verdade",
+        "destaque": "de verdade"
+      }
+    },
+    {
+      "ancora": "foram 66 entrevistas",
+      "layout": "split",
+      "grafico": {
+        "tipo": "numero",
+        "valor": 66,
+        "rotulo": "entrevistas",
+        "detalhe": "em 58 empresas nos EUA, de executivos a quem está na ponta"
+      }
+    },
+    {
+      "ancora": "de escritório de advocacia",
+      "layout": "split",
+      "grafico": {
+        "tipo": "chips",
+        "titulo": "Quem participou",
+        "itens": [
+          "Startups de IA",
+          "Indústrias centenárias",
+          "Advocacia",
+          "Contabilidade",
+          "Engenharia",
+          "Fundos",
+          "Logística",
+          "Consultórios"
+        ]
+      }
+    },
+    {
+      "ancora": "primeira surpresa",
+      "layout": "acima",
+      "grafico": {
+        "tipo": "comparativo",
+        "titulo": "De onde vem o valor da IA",
+        "itens": [
+          {
+            "valor": "Custo",
+            "rotulo": "o que a maioria espera",
+            "ancora": "não vem de cortar"
+          },
+          {
+            "valor": "Produção",
+            "rotulo": "onde está a maior parte do valor",
+            "ancora": "vem de produzir"
+          }
+        ]
+      }
+    },
+    {
+      "ancora": "segunda gente que não",
+      "layout": "split",
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "Achado 2",
+        "titulo": "Quem não programa já cria software",
+        "destaque": "cria software",
+        "subtitulo": "com agentes de código"
+      }
+    },
+    {
+      "ancora": "dos 100 programas",
+      "layout": "split",
+      "grafico": {
+        "tipo": "donut",
+        "percentual": 80,
+        "titulo": "100 programas analisados",
+        "rotulo": "automatizaram trabalho manual",
+        "resto": "os outros 20% substituíram softwares já existentes"
+      }
+    },
+    {
+      "ancora": "e o emprego",
+      "layout": "full",
+      "zoom": true
+    },
+    {
+      "ancora": "demissão causada diretamente",
+      "layout": "acima",
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "Emprego",
+        "titulo": "Demissão direta por IA foi rara",
+        "destaque": "rara"
+      }
+    },
+    {
+      "ancora": "só duas empresas",
+      "layout": "split",
+      "grafico": {
+        "tipo": "comparativo",
+        "itens": [
+          {
+            "valor": "2",
+            "rotulo": "empresas tiveram um cargo eliminado pela automação"
+          },
+          {
+            "valor": "2/3",
+            "rotulo": "das empresas relatam contratar menos",
+            "ancora": "mas em dois terços"
+          }
+        ]
+      }
+    },
+    {
+      "ancora": "como disse um entrevistado",
+      "layout": "split",
+      "grafico": {
+        "tipo": "citacao",
+        "texto": "Podemos não estar demitindo, mas também não estamos contratando.",
+        "autor": "Entrevistado do estudo (tradução livre)"
+      }
+    },
+    {
+      "ancora": "e quem sentiu primeiro",
+      "layout": "acima",
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "Alerta",
+        "titulo": "Os primeiros cortes: terceirizados",
+        "destaque": "terceirizados",
+        "subtitulo": "muitos deles fora dos EUA"
+      }
+    },
+    {
+      "ancora": "nas startups a conta",
+      "layout": "full",
+      "zoom": false
+    },
+    {
+      "ancora": "seis delas estimaram",
+      "layout": "grafico",
+      "grafico": {
+        "tipo": "multiplicador",
+        "de": 1,
+        "para": 4,
+        "rotulo": "mais gente seria necessária sem IA",
+        "detalhe": "média estimada por 6 startups"
+      }
+    },
+    {
+      "ancora": "mas o que mais me chamou",
+      "layout": "full",
+      "zoom": true
+    },
+    {
+      "ancora": "os maiores gargalos",
+      "layout": "acima",
+      "grafico": {
+        "tipo": "lista",
+        "titulo": "Os gargalos estão dentro de casa",
+        "icone": "alerta",
+        "itens": [
+          {
+            "texto": "Resistência de especialistas",
+            "ancora": "resistência de especialistas"
+          },
+          {
+            "texto": "Adoção desigual entre equipes",
+            "ancora": "adoção desigual"
+          },
+          {
+            "texto": "Falta de contexto e de dados",
+            "ancora": "falta de contexto"
+          }
+        ]
+      }
+    },
+    {
+      "ancora": "o maior valor não veio",
+      "layout": "full",
+      "zoom": true
+    },
+    {
+      "ancora": "veio de reorganizar",
+      "layout": "split",
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "O ponto central",
+        "titulo": "Reorganizar o trabalho vale mais que a ferramenta",
+        "destaque": "Reorganizar o trabalho"
+      }
+    },
+    {
+      "ancora": "quem só experimenta",
+      "layout": "split",
+      "grafico": {
+        "tipo": "titulo",
+        "titulo": "Experimentos soltos geram ganhos em ilhas",
+        "destaque": "ilhas"
+      }
+    },
+    {
+      "ancora": "por isso eu sempre",
+      "layout": "split",
+      "grafico": {
+        "tipo": "lema",
+        "linhas": [
+          "IA é o copiloto.",
+          "Cultura, decisão e",
+          "responsabilidade",
+          "continuam humanas."
+        ],
+        "destaques": [
+          "copiloto",
+          "humanas"
+        ]
+      }
+    },
+    {
+      "ancora": "quer o link",
+      "layout": "split",
+      "grafico": {
+        "tipo": "cta",
+        "acao": "Quer o estudo completo?",
+        "palavra": "ESTUDO",
+        "detalhe": "Comenta aqui que eu te mando o link"
+      }
+    }
+  ]
+}

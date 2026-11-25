@@ -1,0 +1,1586 @@
+{
+  "video": "",
+  "duracao": 110.375,
+  "focoY": 0.38,
+  "fonte": "Fonte: Anthropic · Working with AI · nov/2026",
+  "destaques": [
+    "58",
+    "66",
+    "valor",
+    "80%",
+    "rara",
+    "menos",
+    "quatro",
+    "gargalos",
+    "reorganizar",
+    "copiloto",
+    "humanas",
+    "estudo"
+  ],
+  "musica": null,
+  "volumeMusica": 0.08,
+  "palavras": [
+    {
+      "w": "A",
+      "s": 0.3,
+      "e": 0.455
+    },
+    {
+      "w": "Anthropic",
+      "s": 0.505,
+      "e": 1.02
+    },
+    {
+      "w": "conversou",
+      "s": 1.07,
+      "e": 1.585
+    },
+    {
+      "w": "com",
+      "s": 1.635,
+      "e": 1.88
+    },
+    {
+      "w": "gente",
+      "s": 1.93,
+      "e": 2.265
+    },
+    {
+      "w": "de",
+      "s": 2.315,
+      "e": 2.515
+    },
+    {
+      "w": "58",
+      "s": 2.565,
+      "e": 2.765
+    },
+    {
+      "w": "empresas",
+      "s": 2.815,
+      "e": 3.285
+    },
+    {
+      "w": "que",
+      "s": 3.335,
+      "e": 3.58
+    },
+    {
+      "w": "já",
+      "s": 3.63,
+      "e": 3.83
+    },
+    {
+      "w": "usam",
+      "s": 3.88,
+      "e": 4.17
+    },
+    {
+      "w": "IA",
+      "s": 4.22,
+      "e": 4.42
+    },
+    {
+      "w": "no",
+      "s": 4.47,
+      "e": 4.67
+    },
+    {
+      "w": "dia",
+      "s": 4.72,
+      "e": 4.965
+    },
+    {
+      "w": "a",
+      "s": 5.015,
+      "e": 5.17
+    },
+    {
+      "w": "dia.",
+      "s": 5.22,
+      "e": 5.465
+    },
+    {
+      "w": "E",
+      "s": 5.865,
+      "e": 6.02
+    },
+    {
+      "w": "o",
+      "s": 6.07,
+      "e": 6.225
+    },
+    {
+      "w": "que",
+      "s": 6.275,
+      "e": 6.52
+    },
+    {
+      "w": "eles",
+      "s": 6.57,
+      "e": 6.86
+    },
+    {
+      "w": "encontraram",
+      "s": 6.91,
+      "e": 7.515
+    },
+    {
+      "w": "contraria",
+      "s": 7.565,
+      "e": 8.08
+    },
+    {
+      "w": "muito",
+      "s": 8.13,
+      "e": 8.465
+    },
+    {
+      "w": "do",
+      "s": 8.515,
+      "e": 8.715
+    },
+    {
+      "w": "que",
+      "s": 8.765,
+      "e": 9.01
+    },
+    {
+      "w": "a",
+      "s": 9.06,
+      "e": 9.215
+    },
+    {
+      "w": "gente",
+      "s": 9.265,
+      "e": 9.6
+    },
+    {
+      "w": "ouve",
+      "s": 9.65,
+      "e": 9.94
+    },
+    {
+      "w": "por",
+      "s": 9.99,
+      "e": 10.235
+    },
+    {
+      "w": "aí.",
+      "s": 10.285,
+      "e": 10.485
+    },
+    {
+      "w": "Foram",
+      "s": 11.085,
+      "e": 11.42
+    },
+    {
+      "w": "66",
+      "s": 11.47,
+      "e": 11.67
+    },
+    {
+      "w": "entrevistas,",
+      "s": 11.72,
+      "e": 12.325
+    },
+    {
+      "w": "de",
+      "s": 12.525,
+      "e": 12.725
+    },
+    {
+      "w": "startup",
+      "s": 12.775,
+      "e": 13.2
+    },
+    {
+      "w": "a",
+      "s": 13.25,
+      "e": 13.405
+    },
+    {
+      "w": "indústria",
+      "s": 13.455,
+      "e": 13.97
+    },
+    {
+      "w": "centenária,",
+      "s": 14.02,
+      "e": 14.58
+    },
+    {
+      "w": "de",
+      "s": 14.78,
+      "e": 14.98
+    },
+    {
+      "w": "escritório",
+      "s": 15.03,
+      "e": 15.59
+    },
+    {
+      "w": "de",
+      "s": 15.64,
+      "e": 15.84
+    },
+    {
+      "w": "advocacia",
+      "s": 15.89,
+      "e": 16.405
+    },
+    {
+      "w": "a",
+      "s": 16.455,
+      "e": 16.61
+    },
+    {
+      "w": "consultório",
+      "s": 16.66,
+      "e": 17.265
+    },
+    {
+      "w": "de",
+      "s": 17.315,
+      "e": 17.515
+    },
+    {
+      "w": "dentista.",
+      "s": 17.565,
+      "e": 18.035
+    },
+    {
+      "w": "Primeira",
+      "s": 18.635,
+      "e": 19.105
+    },
+    {
+      "w": "surpresa:",
+      "s": 19.155,
+      "e": 19.625
+    },
+    {
+      "w": "a",
+      "s": 19.825,
+      "e": 19.98
+    },
+    {
+      "w": "maior",
+      "s": 20.03,
+      "e": 20.365
+    },
+    {
+      "w": "parte",
+      "s": 20.415,
+      "e": 20.75
+    },
+    {
+      "w": "do",
+      "s": 20.8,
+      "e": 21.0
+    },
+    {
+      "w": "valor",
+      "s": 21.05,
+      "e": 21.385
+    },
+    {
+      "w": "não",
+      "s": 21.435,
+      "e": 21.68
+    },
+    {
+      "w": "vem",
+      "s": 21.73,
+      "e": 21.975
+    },
+    {
+      "w": "de",
+      "s": 22.025,
+      "e": 22.225
+    },
+    {
+      "w": "cortar",
+      "s": 22.275,
+      "e": 22.655
+    },
+    {
+      "w": "custo.",
+      "s": 22.705,
+      "e": 23.04
+    },
+    {
+      "w": "Vem",
+      "s": 23.44,
+      "e": 23.685
+    },
+    {
+      "w": "de",
+      "s": 23.735,
+      "e": 23.935
+    },
+    {
+      "w": "produzir",
+      "s": 23.985,
+      "e": 24.455
+    },
+    {
+      "w": "mais",
+      "s": 24.505,
+      "e": 24.795
+    },
+    {
+      "w": "e",
+      "s": 24.845,
+      "e": 25.0
+    },
+    {
+      "w": "melhor.",
+      "s": 25.05,
+      "e": 25.43
+    },
+    {
+      "w": "Segunda:",
+      "s": 26.03,
+      "e": 26.455
+    },
+    {
+      "w": "gente",
+      "s": 26.655,
+      "e": 26.99
+    },
+    {
+      "w": "que",
+      "s": 27.04,
+      "e": 27.285
+    },
+    {
+      "w": "não",
+      "s": 27.335,
+      "e": 27.58
+    },
+    {
+      "w": "é",
+      "s": 27.63,
+      "e": 27.785
+    },
+    {
+      "w": "programadora",
+      "s": 27.835,
+      "e": 28.485
+    },
+    {
+      "w": "está",
+      "s": 28.535,
+      "e": 28.825
+    },
+    {
+      "w": "criando",
+      "s": 28.875,
+      "e": 29.3
+    },
+    {
+      "w": "software",
+      "s": 29.35,
+      "e": 29.82
+    },
+    {
+      "w": "com",
+      "s": 29.87,
+      "e": 30.115
+    },
+    {
+      "w": "agentes",
+      "s": 30.165,
+      "e": 30.59
+    },
+    {
+      "w": "de",
+      "s": 30.64,
+      "e": 30.84
+    },
+    {
+      "w": "código.",
+      "s": 30.89,
+      "e": 31.27
+    },
+    {
+      "w": "Dos",
+      "s": 31.67,
+      "e": 31.915
+    },
+    {
+      "w": "100",
+      "s": 31.965,
+      "e": 32.21
+    },
+    {
+      "w": "programas",
+      "s": 32.26,
+      "e": 32.775
+    },
+    {
+      "w": "analisados",
+      "s": 32.825,
+      "e": 33.385
+    },
+    {
+      "w": "em",
+      "s": 33.435,
+      "e": 33.635
+    },
+    {
+      "w": "detalhe,",
+      "s": 33.685,
+      "e": 34.11
+    },
+    {
+      "w": "80%",
+      "s": 34.31,
+      "e": 34.555
+    },
+    {
+      "w": "automatizaram",
+      "s": 34.605,
+      "e": 35.3
+    },
+    {
+      "w": "um",
+      "s": 35.35,
+      "e": 35.55
+    },
+    {
+      "w": "trabalho",
+      "s": 35.6,
+      "e": 36.07
+    },
+    {
+      "w": "que",
+      "s": 36.12,
+      "e": 36.365
+    },
+    {
+      "w": "antes",
+      "s": 36.415,
+      "e": 36.75
+    },
+    {
+      "w": "era",
+      "s": 36.8,
+      "e": 37.045
+    },
+    {
+      "w": "manual.",
+      "s": 37.095,
+      "e": 37.475
+    },
+    {
+      "w": "E",
+      "s": 38.075,
+      "e": 38.23
+    },
+    {
+      "w": "o",
+      "s": 38.28,
+      "e": 38.435
+    },
+    {
+      "w": "emprego?",
+      "s": 38.485,
+      "e": 38.91
+    },
+    {
+      "w": "Demissão",
+      "s": 39.31,
+      "e": 39.78
+    },
+    {
+      "w": "causada",
+      "s": 39.83,
+      "e": 40.255
+    },
+    {
+      "w": "diretamente",
+      "s": 40.305,
+      "e": 40.91
+    },
+    {
+      "w": "pela",
+      "s": 40.96,
+      "e": 41.25
+    },
+    {
+      "w": "automação",
+      "s": 41.3,
+      "e": 41.815
+    },
+    {
+      "w": "foi",
+      "s": 41.865,
+      "e": 42.11
+    },
+    {
+      "w": "rara.",
+      "s": 42.16,
+      "e": 42.45
+    },
+    {
+      "w": "Só",
+      "s": 42.85,
+      "e": 43.05
+    },
+    {
+      "w": "duas",
+      "s": 43.1,
+      "e": 43.39
+    },
+    {
+      "w": "empresas",
+      "s": 43.44,
+      "e": 43.91
+    },
+    {
+      "w": "viram",
+      "s": 43.96,
+      "e": 44.295
+    },
+    {
+      "w": "um",
+      "s": 44.345,
+      "e": 44.545
+    },
+    {
+      "w": "cargo",
+      "s": 44.595,
+      "e": 44.93
+    },
+    {
+      "w": "ser",
+      "s": 44.98,
+      "e": 45.225
+    },
+    {
+      "w": "eliminado",
+      "s": 45.275,
+      "e": 45.79
+    },
+    {
+      "w": "de",
+      "s": 45.84,
+      "e": 46.04
+    },
+    {
+      "w": "fato.",
+      "s": 46.09,
+      "e": 46.38
+    },
+    {
+      "w": "Mas",
+      "s": 46.78,
+      "e": 47.025
+    },
+    {
+      "w": "em",
+      "s": 47.075,
+      "e": 47.275
+    },
+    {
+      "w": "dois",
+      "s": 47.325,
+      "e": 47.615
+    },
+    {
+      "w": "terços",
+      "s": 47.665,
+      "e": 48.045
+    },
+    {
+      "w": "delas,",
+      "s": 48.095,
+      "e": 48.43
+    },
+    {
+      "w": "as",
+      "s": 48.63,
+      "e": 48.83
+    },
+    {
+      "w": "pessoas",
+      "s": 48.88,
+      "e": 49.305
+    },
+    {
+      "w": "relataram",
+      "s": 49.355,
+      "e": 49.87
+    },
+    {
+      "w": "que",
+      "s": 49.92,
+      "e": 50.165
+    },
+    {
+      "w": "estão",
+      "s": 50.215,
+      "e": 50.55
+    },
+    {
+      "w": "contratando",
+      "s": 50.6,
+      "e": 51.205
+    },
+    {
+      "w": "menos.",
+      "s": 51.255,
+      "e": 51.59
+    },
+    {
+      "w": "Como",
+      "s": 51.99,
+      "e": 52.28
+    },
+    {
+      "w": "disse",
+      "s": 52.33,
+      "e": 52.665
+    },
+    {
+      "w": "um",
+      "s": 52.715,
+      "e": 52.915
+    },
+    {
+      "w": "entrevistado:",
+      "s": 52.965,
+      "e": 53.615
+    },
+    {
+      "w": "a",
+      "s": 53.815,
+      "e": 53.97
+    },
+    {
+      "w": "gente",
+      "s": 54.02,
+      "e": 54.355
+    },
+    {
+      "w": "pode",
+      "s": 54.405,
+      "e": 54.695
+    },
+    {
+      "w": "não",
+      "s": 54.745,
+      "e": 54.99
+    },
+    {
+      "w": "estar",
+      "s": 55.04,
+      "e": 55.375
+    },
+    {
+      "w": "demitindo,",
+      "s": 55.425,
+      "e": 55.94
+    },
+    {
+      "w": "mas",
+      "s": 56.14,
+      "e": 56.385
+    },
+    {
+      "w": "também",
+      "s": 56.435,
+      "e": 56.815
+    },
+    {
+      "w": "não",
+      "s": 56.865,
+      "e": 57.11
+    },
+    {
+      "w": "está",
+      "s": 57.16,
+      "e": 57.45
+    },
+    {
+      "w": "contratando.",
+      "s": 57.5,
+      "e": 58.105
+    },
+    {
+      "w": "E",
+      "s": 58.505,
+      "e": 58.66
+    },
+    {
+      "w": "quem",
+      "s": 58.71,
+      "e": 59.0
+    },
+    {
+      "w": "sentiu",
+      "s": 59.05,
+      "e": 59.43
+    },
+    {
+      "w": "primeiro",
+      "s": 59.48,
+      "e": 59.95
+    },
+    {
+      "w": "foram",
+      "s": 60.0,
+      "e": 60.335
+    },
+    {
+      "w": "os",
+      "s": 60.385,
+      "e": 60.585
+    },
+    {
+      "w": "terceirizados,",
+      "s": 60.635,
+      "e": 61.33
+    },
+    {
+      "w": "muitos",
+      "s": 61.53,
+      "e": 61.91
+    },
+    {
+      "w": "deles",
+      "s": 61.96,
+      "e": 62.295
+    },
+    {
+      "w": "fora",
+      "s": 62.345,
+      "e": 62.635
+    },
+    {
+      "w": "dos",
+      "s": 62.685,
+      "e": 62.93
+    },
+    {
+      "w": "Estados",
+      "s": 62.98,
+      "e": 63.405
+    },
+    {
+      "w": "Unidos.",
+      "s": 63.455,
+      "e": 63.835
+    },
+    {
+      "w": "Nas",
+      "s": 64.435,
+      "e": 64.68
+    },
+    {
+      "w": "startups,",
+      "s": 64.73,
+      "e": 65.2
+    },
+    {
+      "w": "a",
+      "s": 65.4,
+      "e": 65.555
+    },
+    {
+      "w": "conta",
+      "s": 65.605,
+      "e": 65.94
+    },
+    {
+      "w": "é",
+      "s": 65.99,
+      "e": 66.145
+    },
+    {
+      "w": "ainda",
+      "s": 66.195,
+      "e": 66.53
+    },
+    {
+      "w": "mais",
+      "s": 66.58,
+      "e": 66.87
+    },
+    {
+      "w": "forte.",
+      "s": 66.92,
+      "e": 67.255
+    },
+    {
+      "w": "Seis",
+      "s": 67.655,
+      "e": 67.945
+    },
+    {
+      "w": "delas",
+      "s": 67.995,
+      "e": 68.33
+    },
+    {
+      "w": "estimaram",
+      "s": 68.38,
+      "e": 68.895
+    },
+    {
+      "w": "que,",
+      "s": 68.945,
+      "e": 69.19
+    },
+    {
+      "w": "sem",
+      "s": 69.39,
+      "e": 69.635
+    },
+    {
+      "w": "IA,",
+      "s": 69.685,
+      "e": 69.885
+    },
+    {
+      "w": "precisariam",
+      "s": 70.085,
+      "e": 70.69
+    },
+    {
+      "w": "em",
+      "s": 70.74,
+      "e": 70.94
+    },
+    {
+      "w": "média",
+      "s": 70.99,
+      "e": 71.325
+    },
+    {
+      "w": "de",
+      "s": 71.375,
+      "e": 71.575
+    },
+    {
+      "w": "quatro",
+      "s": 71.625,
+      "e": 72.005
+    },
+    {
+      "w": "vezes",
+      "s": 72.055,
+      "e": 72.39
+    },
+    {
+      "w": "mais",
+      "s": 72.44,
+      "e": 72.73
+    },
+    {
+      "w": "gente.",
+      "s": 72.78,
+      "e": 73.115
+    },
+    {
+      "w": "Mas",
+      "s": 73.715,
+      "e": 73.96
+    },
+    {
+      "w": "o",
+      "s": 74.01,
+      "e": 74.165
+    },
+    {
+      "w": "que",
+      "s": 74.215,
+      "e": 74.46
+    },
+    {
+      "w": "mais",
+      "s": 74.51,
+      "e": 74.8
+    },
+    {
+      "w": "me",
+      "s": 74.85,
+      "e": 75.05
+    },
+    {
+      "w": "chamou",
+      "s": 75.1,
+      "e": 75.48
+    },
+    {
+      "w": "atenção",
+      "s": 75.53,
+      "e": 75.955
+    },
+    {
+      "w": "foi",
+      "s": 76.005,
+      "e": 76.25
+    },
+    {
+      "w": "outra",
+      "s": 76.3,
+      "e": 76.635
+    },
+    {
+      "w": "coisa.",
+      "s": 76.685,
+      "e": 77.02
+    },
+    {
+      "w": "Os",
+      "s": 77.42,
+      "e": 77.62
+    },
+    {
+      "w": "maiores",
+      "s": 77.67,
+      "e": 78.095
+    },
+    {
+      "w": "gargalos",
+      "s": 78.145,
+      "e": 78.615
+    },
+    {
+      "w": "estavam",
+      "s": 78.665,
+      "e": 79.09
+    },
+    {
+      "w": "dentro",
+      "s": 79.14,
+      "e": 79.52
+    },
+    {
+      "w": "das",
+      "s": 79.57,
+      "e": 79.815
+    },
+    {
+      "w": "próprias",
+      "s": 79.865,
+      "e": 80.335
+    },
+    {
+      "w": "empresas.",
+      "s": 80.385,
+      "e": 80.855
+    },
+    {
+      "w": "Resistência",
+      "s": 81.255,
+      "e": 81.86
+    },
+    {
+      "w": "de",
+      "s": 81.91,
+      "e": 82.11
+    },
+    {
+      "w": "especialistas,",
+      "s": 82.16,
+      "e": 82.855
+    },
+    {
+      "w": "adoção",
+      "s": 83.055,
+      "e": 83.435
+    },
+    {
+      "w": "desigual",
+      "s": 83.485,
+      "e": 83.955
+    },
+    {
+      "w": "entre",
+      "s": 84.005,
+      "e": 84.34
+    },
+    {
+      "w": "as",
+      "s": 84.39,
+      "e": 84.59
+    },
+    {
+      "w": "equipes",
+      "s": 84.64,
+      "e": 85.065
+    },
+    {
+      "w": "e",
+      "s": 85.115,
+      "e": 85.27
+    },
+    {
+      "w": "falta",
+      "s": 85.32,
+      "e": 85.655
+    },
+    {
+      "w": "de",
+      "s": 85.705,
+      "e": 85.905
+    },
+    {
+      "w": "contexto",
+      "s": 85.955,
+      "e": 86.425
+    },
+    {
+      "w": "e",
+      "s": 86.475,
+      "e": 86.63
+    },
+    {
+      "w": "de",
+      "s": 86.68,
+      "e": 86.88
+    },
+    {
+      "w": "dados.",
+      "s": 86.93,
+      "e": 87.265
+    },
+    {
+      "w": "O",
+      "s": 87.865,
+      "e": 88.02
+    },
+    {
+      "w": "maior",
+      "s": 88.07,
+      "e": 88.405
+    },
+    {
+      "w": "valor",
+      "s": 88.455,
+      "e": 88.79
+    },
+    {
+      "w": "não",
+      "s": 88.84,
+      "e": 89.085
+    },
+    {
+      "w": "veio",
+      "s": 89.135,
+      "e": 89.425
+    },
+    {
+      "w": "da",
+      "s": 89.475,
+      "e": 89.675
+    },
+    {
+      "w": "ferramenta.",
+      "s": 89.725,
+      "e": 90.285
+    },
+    {
+      "w": "Veio",
+      "s": 90.685,
+      "e": 90.975
+    },
+    {
+      "w": "de",
+      "s": 91.025,
+      "e": 91.225
+    },
+    {
+      "w": "reorganizar",
+      "s": 91.275,
+      "e": 91.88
+    },
+    {
+      "w": "o",
+      "s": 91.93,
+      "e": 92.085
+    },
+    {
+      "w": "trabalho.",
+      "s": 92.135,
+      "e": 92.605
+    },
+    {
+      "w": "Quem",
+      "s": 93.005,
+      "e": 93.295
+    },
+    {
+      "w": "só",
+      "s": 93.345,
+      "e": 93.545
+    },
+    {
+      "w": "experimenta",
+      "s": 93.595,
+      "e": 94.2
+    },
+    {
+      "w": "aqui",
+      "s": 94.25,
+      "e": 94.54
+    },
+    {
+      "w": "e",
+      "s": 94.59,
+      "e": 94.745
+    },
+    {
+      "w": "ali",
+      "s": 94.795,
+      "e": 95.04
+    },
+    {
+      "w": "colhe",
+      "s": 95.09,
+      "e": 95.425
+    },
+    {
+      "w": "ganhos",
+      "s": 95.475,
+      "e": 95.855
+    },
+    {
+      "w": "em",
+      "s": 95.905,
+      "e": 96.105
+    },
+    {
+      "w": "ilhas.",
+      "s": 96.155,
+      "e": 96.49
+    },
+    {
+      "w": "Por",
+      "s": 97.09,
+      "e": 97.335
+    },
+    {
+      "w": "isso",
+      "s": 97.385,
+      "e": 97.675
+    },
+    {
+      "w": "eu",
+      "s": 97.725,
+      "e": 97.925
+    },
+    {
+      "w": "sempre",
+      "s": 97.975,
+      "e": 98.355
+    },
+    {
+      "w": "repito:",
+      "s": 98.405,
+      "e": 98.785
+    },
+    {
+      "w": "IA",
+      "s": 98.985,
+      "e": 99.185
+    },
+    {
+      "w": "é",
+      "s": 99.235,
+      "e": 99.39
+    },
+    {
+      "w": "o",
+      "s": 99.44,
+      "e": 99.595
+    },
+    {
+      "w": "copiloto.",
+      "s": 99.645,
+      "e": 100.115
+    },
+    {
+      "w": "Cultura,",
+      "s": 100.515,
+      "e": 100.94
+    },
+    {
+      "w": "decisão",
+      "s": 101.14,
+      "e": 101.565
+    },
+    {
+      "w": "e",
+      "s": 101.615,
+      "e": 101.77
+    },
+    {
+      "w": "responsabilidade",
+      "s": 101.82,
+      "e": 102.65
+    },
+    {
+      "w": "continuam",
+      "s": 102.7,
+      "e": 103.215
+    },
+    {
+      "w": "humanas.",
+      "s": 103.265,
+      "e": 103.69
+    },
+    {
+      "w": "Quer",
+      "s": 104.29,
+      "e": 104.58
+    },
+    {
+      "w": "o",
+      "s": 104.63,
+      "e": 104.785
+    },
+    {
+      "w": "link",
+      "s": 104.835,
+      "e": 105.125
+    },
+    {
+      "w": "do",
+      "s": 105.175,
+      "e": 105.375
+    },
+    {
+      "w": "estudo",
+      "s": 105.425,
+      "e": 105.805
+    },
+    {
+      "w": "completo?",
+      "s": 105.855,
+      "e": 106.325
+    },
+    {
+      "w": "Comenta",
+      "s": 106.725,
+      "e": 107.15
+    },
+    {
+      "w": "ESTUDO",
+      "s": 107.2,
+      "e": 107.58
+    },
+    {
+      "w": "aqui",
+      "s": 107.63,
+      "e": 107.92
+    },
+    {
+      "w": "embaixo",
+      "s": 107.97,
+      "e": 108.395
+    },
+    {
+      "w": "que",
+      "s": 108.445,
+      "e": 108.69
+    },
+    {
+      "w": "eu",
+      "s": 108.74,
+      "e": 108.94
+    },
+    {
+      "w": "te",
+      "s": 108.99,
+      "e": 109.19
+    },
+    {
+      "w": "mando.",
+      "s": 109.24,
+      "e": 109.575
+    }
+  ],
+  "cenas": [
+    {
+      "inicio": 0.0,
+      "layout": "full",
+      "zoom": false,
+      "grafico": null,
+      "fim": 5.765
+    },
+    {
+      "inicio": 5.765,
+      "layout": "acima",
+      "zoom": false,
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "Estudo Anthropic · nov/2026",
+        "titulo": "Como empresas trabalham com IA de verdade",
+        "destaque": "de verdade"
+      },
+      "fim": 10.985
+    },
+    {
+      "inicio": 10.985,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "numero",
+        "valor": 66,
+        "rotulo": "entrevistas",
+        "detalhe": "em 58 empresas nos EUA, de executivos a quem está na ponta"
+      },
+      "fim": 14.68
+    },
+    {
+      "inicio": 14.68,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "chips",
+        "titulo": "Quem participou",
+        "itens": [
+          "Startups de IA",
+          "Indústrias centenárias",
+          "Advocacia",
+          "Contabilidade",
+          "Engenharia",
+          "Fundos",
+          "Logística",
+          "Consultórios"
+        ]
+      },
+      "fim": 18.535
+    },
+    {
+      "inicio": 18.535,
+      "layout": "acima",
+      "zoom": false,
+      "grafico": {
+        "tipo": "comparativo",
+        "titulo": "De onde vem o valor da IA",
+        "itens": [
+          {
+            "valor": "Custo",
+            "rotulo": "o que a maioria espera",
+            "t": 2.8
+          },
+          {
+            "valor": "Produção",
+            "rotulo": "onde está a maior parte do valor",
+            "t": 4.805
+          }
+        ]
+      },
+      "fim": 25.93
+    },
+    {
+      "inicio": 25.93,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "Achado 2",
+        "titulo": "Quem não programa já cria software",
+        "destaque": "cria software",
+        "subtitulo": "com agentes de código"
+      },
+      "fim": 31.57
+    },
+    {
+      "inicio": 31.57,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "donut",
+        "percentual": 80,
+        "titulo": "100 programas analisados",
+        "rotulo": "automatizaram trabalho manual",
+        "resto": "os outros 20% substituíram softwares já existentes"
+      },
+      "fim": 37.975
+    },
+    {
+      "inicio": 37.975,
+      "layout": "full",
+      "zoom": true,
+      "grafico": null,
+      "fim": 39.21
+    },
+    {
+      "inicio": 39.21,
+      "layout": "acima",
+      "zoom": false,
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "Emprego",
+        "titulo": "Demissão direta por IA foi rara",
+        "destaque": "rara"
+      },
+      "fim": 42.75
+    },
+    {
+      "inicio": 42.75,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "comparativo",
+        "itens": [
+          {
+            "valor": "2",
+            "rotulo": "empresas tiveram um cargo eliminado pela automação"
+          },
+          {
+            "valor": "2/3",
+            "rotulo": "das empresas relatam contratar menos",
+            "t": 3.93
+          }
+        ]
+      },
+      "fim": 51.89
+    },
+    {
+      "inicio": 51.89,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "citacao",
+        "texto": "Podemos não estar demitindo, mas também não estamos contratando.",
+        "autor": "Entrevistado do estudo (tradução livre)"
+      },
+      "fim": 58.405
+    },
+    {
+      "inicio": 58.405,
+      "layout": "acima",
+      "zoom": false,
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "Alerta",
+        "titulo": "Os primeiros cortes: terceirizados",
+        "destaque": "terceirizados",
+        "subtitulo": "muitos deles fora dos EUA"
+      },
+      "fim": 64.335
+    },
+    {
+      "inicio": 64.335,
+      "layout": "full",
+      "zoom": false,
+      "grafico": null,
+      "fim": 67.555
+    },
+    {
+      "inicio": 67.555,
+      "layout": "grafico",
+      "zoom": false,
+      "grafico": {
+        "tipo": "multiplicador",
+        "de": 1,
+        "para": 4,
+        "rotulo": "mais gente seria necessária sem IA",
+        "detalhe": "média estimada por 6 startups"
+      },
+      "fim": 73.615
+    },
+    {
+      "inicio": 73.615,
+      "layout": "full",
+      "zoom": true,
+      "grafico": null,
+      "fim": 77.32
+    },
+    {
+      "inicio": 77.32,
+      "layout": "acima",
+      "zoom": false,
+      "grafico": {
+        "tipo": "lista",
+        "titulo": "Os gargalos estão dentro de casa",
+        "icone": "alerta",
+        "itens": [
+          {
+            "texto": "Resistência de especialistas",
+            "t": 3.835
+          },
+          {
+            "texto": "Adoção desigual entre equipes",
+            "t": 5.635
+          },
+          {
+            "texto": "Falta de contexto e de dados",
+            "t": 7.9
+          }
+        ]
+      },
+      "fim": 87.765
+    },
+    {
+      "inicio": 87.765,
+      "layout": "full",
+      "zoom": true,
+      "grafico": null,
+      "fim": 90.585
+    },
+    {
+      "inicio": 90.585,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "titulo",
+        "selo": "O ponto central",
+        "titulo": "Reorganizar o trabalho vale mais que a ferramenta",
+        "destaque": "Reorganizar o trabalho"
+      },
+      "fim": 92.905
+    },
+    {
+      "inicio": 92.905,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "titulo",
+        "titulo": "Experimentos soltos geram ganhos em ilhas",
+        "destaque": "ilhas"
+      },
+      "fim": 96.99
+    },
+    {
+      "inicio": 96.99,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "lema",
+        "linhas": [
+          "IA é o copiloto.",
+          "Cultura, decisão e",
+          "responsabilidade",
+          "continuam humanas."
+        ],
+        "destaques": [
+          "copiloto",
+          "humanas"
+        ]
+      },
+      "fim": 104.19
+    },
+    {
+      "inicio": 104.19,
+      "layout": "split",
+      "zoom": false,
+      "grafico": {
+        "tipo": "cta",
+        "acao": "Quer o estudo completo?",
+        "palavra": "ESTUDO",
+        "detalhe": "Comenta aqui que eu te mando o link"
+      },
+      "fim": 110.375
+    }
+  ]
+}

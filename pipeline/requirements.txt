@@ -1,0 +1,2 @@
+# Transcrição local, gratuita, com timestamp por palavra (CPU ou GPU).
+faster-whisper>=1.1.0
